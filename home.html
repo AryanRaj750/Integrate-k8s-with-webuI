@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- <meta charset="UTF-8"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=no">
+   <!-- <meta http-equiv="Content-Security-Policy" content="default-src 
+    'self'"> -->
+    <title>Docker Server</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./style1.css">
+    <script src="./style.js"></script>
+    
+</head>
+<body>
+    <div class="container-fluid ml-0 mr-0 px-0">
+    <div class="container-fluid bg-info ml-0 mr-0" id="mainheader">
+        <div class="row mb-3 pt-3 ml-3">
+            <div class="col-2 ml-3">
+                <h3 style="color: white;">Aryan-Arth</h3>
+            </div>
+            <div class="col" >
+                <div  style="align-items:center ;" >
+                    <marquee behavior="alternate" direction="rtl" style="color: white; ">
+                        <h5 >ARTH 2k20 & Summer Intership 2k21</h5>
+                    </marquee>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row ">
+            <div class="col-4 lg">
+                <nav class="navbar navbar-expand btn-light bg-info">
+                    <ul class="navbar-nav mx-3">
+                        <li class="nav-item navbtn"><a href="home.html" class="nav-link px-4">  Home  </a></li>
+                        <li class="nav-item dropdown navbtn" >
+                            <a href="#" class="nav-link dropdown-toggle px-3" id="navbarDropdown" role="button" data-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu bg-info " aria-labelledby="navbarDropdown">
+                                <a href="#" class="dropdown-item"> AWS </a>
+                                <a href="k8s.html" class="dropdown-item"> K8s</a>
+                                <a href="#" class="dropdown-item"> LVM </a>
+                                <a href="docker.html" class="dropdown-item"> Docker </a>
+                                <a href="#" class="dropdown-item"> JENKINS </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <input type="search" class="form-control" placeholder="Search">
+                </div>
+            </div>
+            <div class="col-1 sbtn">
+                <div class="form-gruop">
+                    <input type="button" value="Search" class="btn btn-light btn-outline-primary searchbtn px-4"; >
+                </div>
+            </div>
+           <div class="col">
+                <ul class="nav  nav-pills px-4 ml-5" >
+                    <li class="nav-item navbtn "><a href="#" class="nav-link px-4 mr-4"> Contact </a></li>
+                    <li class="nav-item navbtn"><a href="#" class="nav-link px-4"> Support </a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+        # Banner of the page!!!
+    -->
+    <div class="container-fluid" id="home-banner">
+       <div class="row">
+         <div class="col-5"></div>
+         <div class="col-4">
+            <!---o<form action="http://192.168.43.219/cgi-bin/dock.py"> --->
+           <div class="form-group cmdbox">
+               <input type="search" name="cmd" id="uinput" class="form-control" onkeypress="commandProcess(event)" placeholder="Type  something here...">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="form-group submit">
+                    <input type="button" value=" Run Command " class="btn btn-primary" onclick="request()"> <!---onclick=result --->
+                </div>
+            <!--- </form> --->
+            </div>
+	</div>
+         <div class="row mt-5 mb-5"> 
+	     <div class="col-5"> </div>   
+             <div class="col-5">   
+                <h5 id="outputtexthome"> output:- </h5>               
+		<div class="form-group"> <textarea class="form-control" id="#textfieldhome"></textarea></div> 
+  	     </div>
+         </div>
+                
+
+    </div>
+
+
+    <!--
+        # Now footer starts
+    -->
+    <div class="container-fluid footerdiv">
+        <div class="row">
+            <div class="col-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, in.
+            </div>
+            <div class="col-3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti odit amet sequi debitis.
+            </div>
+            <div class="col-3">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam atque delectus explicabo sunt velit unde!
+
+            </div>
+            <div class="col-3">
+                <i class="fab fa-facebook-f"></i>
+                 copyright  &copy; 2k21 by Aryan Raj-Arth
+            </div>
+        </div>
+    </div>
+</div>
+       
+        <script src="./style.js"></script>
+    </body>
+</html>
